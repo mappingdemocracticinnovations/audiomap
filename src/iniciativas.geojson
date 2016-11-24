@@ -1,0 +1,962 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.683,
+                    40.416
+                ]
+            },
+            "properties": {
+                "cartodb_id": 1298,
+                "city": "Madrid",
+                "distrito": null,
+                "ini_addres": "Retiro",
+                "ini_agent": "Administración Pública",
+                "ini_descri": "lakjsdhf adsf lfasdj alsdkjfh",
+                "ini_facebook": "",
+                "ini_id": null,
+                "ini_mail": "pruebas@pruebas.net",
+                "ini_name": "Iniciativa pruebas",
+                "ini_space": "Centro Social",
+                "ini_topic": "Apoyo Mutuo y Cuidados",
+                "ini_twitter": "",
+                "ini_web": "www.pruebas.net",
+                "lat": 40.416,
+                "literal": null,
+                "lon": -3.683,
+                "state": null,
+                "created_at": null,
+                "updated_at": null,
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.683,
+                    40.416
+                ]
+            },
+            "properties": {
+                "cartodb_id": 3076,
+                "city": "el salvador",
+                "distrito": null,
+                "ini_addres": "14 Avenida Norte #460 San Salvador",
+                "ini_agent": "Organizaciones y Asociaciones de Vecinos",
+                "ini_descri": "Nace con el fin de ofrecer un espacio donde las trabajadoras del sexo pudieran aprender oficios alternativos, un grupo de padres franciscanos y religiosas de la Divina Providencia empezaron a visitar a las mujeres a sus lugares de trabajo. Fue así como el 14 de noviembre de 1991, se funda el Proyecto Integral de Mujeres, gracias al apoyo financiero de la Universidad Luterana.",
+                "ini_facebook": "",
+                "ini_id": null,
+                "ini_mail": "flormonitoreo@yahoo.es",
+                "ini_name": "Asociación Mujeres Flor de Piedra",
+                "ini_space": "Centro Social",
+                "ini_topic": "Apoyo Mutuo y Cuidados",
+                "ini_twitter": "",
+                "ini_web": "http://www.flordepiedra.org/",
+                "lat": 40.416,
+                "literal": null,
+                "lon": -3.683,
+                "state": null,
+                "created_at": null,
+                "updated_at": null,
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.683,
+                    40.416
+                ]
+            },
+            "properties": {
+                "cartodb_id": 1620,
+                "city": "Bogotá",
+                "distrito": null,
+                "ini_addres": "",
+                "ini_agent": "Administración Pública",
+                "ini_descri": "",
+                "ini_facebook": "",
+                "ini_id": null,
+                "ini_mail": "",
+                "ini_name": "",
+                "ini_space": "Centro Social",
+                "ini_topic": "Apoyo Mutuo y Cuidados",
+                "ini_twitter": "",
+                "ini_web": "",
+                "lat": 40.416,
+                "literal": null,
+                "lon": -3.683,
+                "state": null,
+                "created_at": null,
+                "updated_at": null,
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.683,
+                    40.416
+                ]
+            },
+            "properties": {
+                "cartodb_id": 1234,
+                "city": "Santos",
+                "distrito": null,
+                "ini_addres": "Rua Oswaldo Cruz, 106, Boqueirão, Santos",
+                "ini_agent": "Empresa Social",
+                "ini_descri": "Escola de desenho desde 2009",
+                "ini_facebook": "",
+                "ini_id": null,
+                "ini_mail": "",
+                "ini_name": "Academia de Artes Edison Muniz",
+                "ini_space": "Otros",
+                "ini_topic": "Arte Urbano",
+                "ini_twitter": "",
+                "ini_web": "",
+                "lat": 40.416,
+                "literal": null,
+                "lon": -3.683,
+                "state": null,
+                "created_at": null,
+                "updated_at": null,
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.683,
+                    40.416
+                ]
+            },
+            "properties": {
+                "cartodb_id": 1068,
+                "city": "Madrid",
+                "distrito": null,
+                "ini_addres": "C/Oriente 2, 1ºE . 20701",
+                "ini_agent": "Administración Pública",
+                "ini_descri": "Promover y difundir el trabajo de escritores y autores, creando redes que lleguen a toda las entidades donde se produzca literatura y generar un intercambio que cree un flujo de producción literaria \r\n-Fomentar la lectura y la escritura \r\n-Lograr que la lectura sea un producto digerible y agradable \r\n-Fomentar la difusión de la cultura \r\n-Fomentar e integrar el nivel y la  calidad de los servicios para la atención y participación de los escritores.\r\n",
+                "ini_facebook": "https://www.facebook.com/CulturaIndigente/",
+                "ini_id": null,
+                "ini_mail": "civics.info@gmail.com",
+                "ini_name": "CULTURA INDIGENTE",
+                "ini_space": "Infraestructuras y/o Intervenciones Urbanas",
+                "ini_topic": "Cultura Libre",
+                "ini_twitter": "",
+                "ini_web": "culturaindigente.blogspot.com.es/",
+                "lat": 40.416,
+                "literal": null,
+                "lon": -3.683,
+                "state": null,
+                "created_at": null,
+                "updated_at": null,
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.683,
+                    40.416
+                ]
+            },
+            "properties": {
+                "cartodb_id": 3564,
+                "city": "Madrid",
+                "distrito": null,
+                "ini_addres": "",
+                "ini_agent": "Administración Pública",
+                "ini_descri": "",
+                "ini_facebook": "",
+                "ini_id": null,
+                "ini_mail": "",
+                "ini_name": "",
+                "ini_space": "Centro Social",
+                "ini_topic": "Apoyo Mutuo y Cuidados",
+                "ini_twitter": "",
+                "ini_web": "",
+                "lat": 40.416,
+                "literal": null,
+                "lon": -3.683,
+                "state": null,
+                "created_at": null,
+                "updated_at": null,
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.699043,
+                    40.412205
+                ]
+            },
+            "properties": {
+                "cartodb_id": 1012,
+                "city": "Madrid",
+                "distrito": null,
+                "ini_addres": "Calle de Atocha, 54, 28012 Madrid",
+                "ini_agent": "Organizaciones y Asociaciones de Vecinos",
+                "ini_descri": "VdB es un proyecto inclusivo impulsado por los vecinos del barrio Virgen de Begoña con la colaboración de Paisaje Transversal, para llevar a cabo la regeneración integral participativa de la colonia y con ello mejorar la calidad de vida de todos sus residentes. El proyecto comenzó en el año 2011.",
+                "ini_facebook": "",
+                "ini_id": null,
+                "ini_mail": "vecinosdebegona@gmail.com",
+                "ini_name": "VdB",
+                "ini_space": "Encuentro Diálogo y Corresponsabilidad",
+                "ini_topic": "Urbanismo y Patrimonio",
+                "ini_twitter": "",
+                "ini_web": "https://vdebegona.wordpress.com/",
+                "lat": 40.412205,
+                "literal": null,
+                "lon": -3.69904270000006,
+                "state": null,
+                "created_at": null,
+                "updated_at": null,
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.698687,
+                    40.407246
+                ]
+            },
+            "properties": {
+                "cartodb_id": 710,
+                "city": "Madrid",
+                "distrito": "",
+                "ini_addres": "Calle Doctor Fourquet, 24",
+                "ini_agent": "Iniciativa Ciudadana",
+                "ini_descri": "El Instituto para la Divulgación y el Estudio del Cómic, el Programa de Radio La Guía del Cómic y Esta Es Una Plaza instalan un espacio de lectura de cómic, novela gráfica e historieta al aire libre. Todos los martes de 11 a 14 horas en Esta Es Una Plaza. ",
+                "ini_facebook": "Programa de Radio La Guía del Cómic",
+                "ini_id": "",
+                "ini_mail": "christian@laguiadelcomic.es",
+                "ini_name": "MicroTBOteca",
+                "ini_space": "Solares y Espacios Recuperados",
+                "ini_topic": "Cultura Libre",
+                "ini_twitter": "@laguiadelcomic",
+                "ini_web": "www.laguiadelcomic.es",
+                "lat": 40.4072457,
+                "literal": "",
+                "lon": -3.69868700000006,
+                "state": "",
+                "created_at": "2015-10-22T09:25:55Z",
+                "updated_at": "2016-01-25T17:50:21Z",
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.698355,
+                    40.411743
+                ]
+            },
+            "properties": {
+                "cartodb_id": 564,
+                "city": "Madrid",
+                "distrito": "",
+                "ini_addres": "Calle Duque de Fernán Nuñez, 2, madrid",
+                "ini_agent": "Empresa Social",
+                "ini_descri": "[VIC] Vivero de Iniciativas Ciudadanas es una plataforma  abierta, colaborativa  y orientada a promover, difundir, analizar y apoyar iniciativas y procesos críticos con ánimo propositivo de la ciudadanía, con especial incidencia en la transferencias al territorio, la ciudad y el espacio público.\n\nObservamos y cartografiamos iniciativas ciudadanas que suponen “otra forma de hacer las cosas”, incorporando nuevos conceptos, agentes e iniciativas en innovación social y estudiando su aplicabilidad a proyectos y propuestas (estudios de caso) en el ámbito de la arquitectura y lo urbano.\n\nProponemos proyectos y estrategias o “modos de hacer” que sirvan de puente entre los diversos agentes que formamos hoy la sociedad red que estamos construyendo.\n\nCompartimos el conocimiento colectivo en diversos talleres, encuentros y foros abiertos generando vínculos actualizados en la sociedad, escuchando, estudiando y proponiendo rutas sobre situaciones concretas, que permiten reunir teoría y práctica.",
+                "ini_facebook": "",
+                "ini_id": "",
+                "ini_mail": "viverodeiniciativasciudadanas@gmail.com",
+                "ini_name": "VIVERO DE INICIATIVAS CIUDADANAS",
+                "ini_space": "Encuentro Diálogo y Corresponsabilidad",
+                "ini_topic": "Urbanismo y Patrimonio",
+                "ini_twitter": "@desdevic",
+                "ini_web": "www.viveroiniciativasciudadanas.net",
+                "lat": 40.4117425,
+                "literal": "",
+                "lon": -3.69835450000005,
+                "state": "",
+                "created_at": "2015-10-13T09:50:22Z",
+                "updated_at": "2016-01-25T17:50:21Z",
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.700036,
+                    40.409819
+                ]
+            },
+            "properties": {
+                "cartodb_id": 390,
+                "city": "Madrid",
+                "distrito": "Centro",
+                "ini_addres": "C/ Escuadra, 11",
+                "ini_agent": "Empresa Social",
+                "ini_descri": "Ecooo es empresa de no lucro cuyos beneficios de destinan a generar tejido social y a campañas de divulgación y sensibilización sobre la transición hacia un modelo energético basado en el ahorro, la eficiencia y las energías renovables. Su local de la calle Escuadra es un centro de coworking y un espacio de desarrollo de eventos formativos e informativos. ",
+                "ini_facebook": "https://www.facebook.com/ecooo.revolucionsolar",
+                "ini_id": "",
+                "ini_mail": "contacto@ecooo.es",
+                "ini_name": "ECOOO",
+                "ini_space": "Encuentro Diálogo y Corresponsabilidad",
+                "ini_topic": "Ecología Urbana y Consumo",
+                "ini_twitter": "@Ecooo_",
+                "ini_web": "http://www.ecooo.es/",
+                "lat": 40.409819,
+                "literal": "Calle Escuadra, 11, 28012 Madrid, Madrid, España",
+                "lon": -3.700036,
+                "state": "España",
+                "created_at": "2015-06-16T20:05:45Z",
+                "updated_at": "2016-01-25T17:50:21Z",
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.698786,
+                    40.408841
+                ]
+            },
+            "properties": {
+                "cartodb_id": 591,
+                "city": "Madrid",
+                "distrito": "",
+                "ini_addres": "C/ San Cosme y San Damián, 24, Madrid",
+                "ini_agent": "Organizaciones y Asociaciones de Vecinos",
+                "ini_descri": "Más zonas verdes y espacios públicos de encuentro, una movilidad más sostenible y menos dependiente del vehículo privado, más equipamientos sanitarios, educativos, culturales y deportivos... son algunas de las reivindicaciones de la asociación del Barrio de Justicia.   ",
+                "ini_facebook": "",
+                "ini_id": "",
+                "ini_mail": "",
+                "ini_name": "A. V. Barrio de Justicia",
+                "ini_space": "Encuentro Diálogo y Corresponsabilidad",
+                "ini_topic": "Urbanismo y Patrimonio",
+                "ini_twitter": "",
+                "ini_web": "",
+                "lat": 40.4088411,
+                "literal": "",
+                "lon": -3.69878619999997,
+                "state": "",
+                "created_at": "2015-10-13T10:50:33Z",
+                "updated_at": "2016-01-25T17:50:21Z",
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.694105,
+                    40.411463
+                ]
+            },
+            "properties": {
+                "cartodb_id": 1046,
+                "city": "Madrid",
+                "distrito": null,
+                "ini_addres": "calle gobernador 26, madrid",
+                "ini_agent": "Empresa Social",
+                "ini_descri": "Impact Hub es una red global de profesionales, centros de innovación y programas a lo largo del mundo que inspiran, conectan e impulsan hacia el impacto social.",
+                "ini_facebook": "https://www.facebook.com/impacthubmadrid",
+                "ini_id": null,
+                "ini_mail": "madrid@impacthub.net",
+                "ini_name": "Impact Hub Madrid",
+                "ini_space": "Trabajo Colaborativo",
+                "ini_topic": "Economía Colaborativa",
+                "ini_twitter": "@ImpactHubMAD ",
+                "ini_web": "http://madrid.impacthub.net",
+                "lat": 40.4114633,
+                "literal": null,
+                "lon": -3.69410519999997,
+                "state": null,
+                "created_at": null,
+                "updated_at": null,
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.699207,
+                    40.409608
+                ]
+            },
+            "properties": {
+                "cartodb_id": 1456,
+                "city": "Madrid",
+                "distrito": null,
+                "ini_addres": "Zurita, 20, madrid",
+                "ini_agent": "Iniciativa Ciudadana",
+                "ini_descri": "En el Teatro del Barrio intentamos hacer las cosas de una forma diferente. Se trata de una iniciativa cultural para crear un proyecto denso, profundo, pluridisciplinar, destinado a cuestionar de forma radical la política, la sociedad, la economía y el arte.\r\nSin ánimo de lucro. Sin propiedad. Asamblea. Ágora. Inteligencia colectiva. Radical.El Teatro del Barrio ha adoptado la forma de cooperativa de consumo cultural. ",
+                "ini_facebook": "https://www.facebook.com/tuteatrodelbarrio",
+                "ini_id": null,
+                "ini_mail": "info@teatrodelbarrio.com",
+                "ini_name": "TEATRO DE BARRIO",
+                "ini_space": "Infraestructuras y/o Intervenciones Urbanas",
+                "ini_topic": "Arte Urbano",
+                "ini_twitter": "@teatrobarrio",
+                "ini_web": "www.teatrodelbarrio.com",
+                "lat": 40.4096082,
+                "literal": null,
+                "lon": -3.69920660000002,
+                "state": null,
+                "created_at": null,
+                "updated_at": null,
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.683,
+                    40.416
+                ]
+            },
+            "properties": {
+                "cartodb_id": 1054,
+                "city": "Madrid",
+                "distrito": null,
+                "ini_addres": "puerta de sol",
+                "ini_agent": "Administración Pública",
+                "ini_descri": "",
+                "ini_facebook": "",
+                "ini_id": null,
+                "ini_mail": "",
+                "ini_name": "",
+                "ini_space": "Centro Social",
+                "ini_topic": "Apoyo Mutuo y Cuidados",
+                "ini_twitter": "",
+                "ini_web": "",
+                "lat": 40.416,
+                "literal": null,
+                "lon": -3.683,
+                "state": null,
+                "created_at": null,
+                "updated_at": null,
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.683,
+                    40.416
+                ]
+            },
+            "properties": {
+                "cartodb_id": 1418,
+                "city": "Madrid",
+                "distrito": null,
+                "ini_addres": "",
+                "ini_agent": "Administración Pública",
+                "ini_descri": "",
+                "ini_facebook": "",
+                "ini_id": null,
+                "ini_mail": "",
+                "ini_name": "",
+                "ini_space": "Centro Social",
+                "ini_topic": "Apoyo Mutuo y Cuidados",
+                "ini_twitter": "",
+                "ini_web": "",
+                "lat": 40.416,
+                "literal": null,
+                "lon": -3.683,
+                "state": null,
+                "created_at": null,
+                "updated_at": null,
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.683,
+                    40.416
+                ]
+            },
+            "properties": {
+                "cartodb_id": 1407,
+                "city": "Madrid",
+                "distrito": null,
+                "ini_addres": "",
+                "ini_agent": "Administración Pública",
+                "ini_descri": "",
+                "ini_facebook": "",
+                "ini_id": null,
+                "ini_mail": "",
+                "ini_name": "",
+                "ini_space": "Centro Social",
+                "ini_topic": "Apoyo Mutuo y Cuidados",
+                "ini_twitter": "",
+                "ini_web": "",
+                "lat": 40.416,
+                "literal": null,
+                "lon": -3.683,
+                "state": null,
+                "created_at": null,
+                "updated_at": null,
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.683,
+                    40.416
+                ]
+            },
+            "properties": {
+                "cartodb_id": 1409,
+                "city": "Madrid",
+                "distrito": null,
+                "ini_addres": "Tegucigalpa, Honduras",
+                "ini_agent": "Administración Pública",
+                "ini_descri": "",
+                "ini_facebook": "",
+                "ini_id": null,
+                "ini_mail": "",
+                "ini_name": "",
+                "ini_space": "Centro Social",
+                "ini_topic": "Apoyo Mutuo y Cuidados",
+                "ini_twitter": "",
+                "ini_web": "",
+                "lat": 40.416,
+                "literal": null,
+                "lon": -3.683,
+                "state": null,
+                "created_at": null,
+                "updated_at": null,
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.683,
+                    40.416
+                ]
+            },
+            "properties": {
+                "cartodb_id": 1413,
+                "city": "Madrid",
+                "distrito": null,
+                "ini_addres": "tegucigalpa, Honduras",
+                "ini_agent": "Administración Pública",
+                "ini_descri": "",
+                "ini_facebook": "",
+                "ini_id": null,
+                "ini_mail": "",
+                "ini_name": "",
+                "ini_space": "Centro Social",
+                "ini_topic": "Apoyo Mutuo y Cuidados",
+                "ini_twitter": "",
+                "ini_web": "",
+                "lat": 40.416,
+                "literal": null,
+                "lon": -3.683,
+                "state": null,
+                "created_at": null,
+                "updated_at": null,
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.683,
+                    40.416
+                ]
+            },
+            "properties": {
+                "cartodb_id": 2492,
+                "city": "Madrid",
+                "distrito": null,
+                "ini_addres": "calle luis tristan 7 illescas toledo españa",
+                "ini_agent": "Administración Pública",
+                "ini_descri": "zczxczxczxczxc",
+                "ini_facebook": "",
+                "ini_id": null,
+                "ini_mail": "",
+                "ini_name": "czxczcx",
+                "ini_space": "Centro Social",
+                "ini_topic": "Apoyo Mutuo y Cuidados",
+                "ini_twitter": "",
+                "ini_web": "",
+                "lat": 40.416,
+                "literal": null,
+                "lon": -3.683,
+                "state": null,
+                "created_at": null,
+                "updated_at": null,
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.693585,
+                    40.41052
+                ]
+            },
+            "properties": {
+                "cartodb_id": 1292,
+                "city": "Madrid",
+                "distrito": null,
+                "ini_addres": "Calle Alameda 15 Madrid",
+                "ini_agent": "Iniciativa Ciudadana",
+                "ini_descri": "Grupo de usuarias de Wikipedia que intenta reducir la brecha de género incorporando nuevas editoras y generando más contenidos relacionados con mujeres.",
+                "ini_facebook": "https://www.facebook.com/wikimujeres/",
+                "ini_id": null,
+                "ini_mail": "info@wikimujeres.wiki",
+                "ini_name": "Wikimujeres",
+                "ini_space": "Otros",
+                "ini_topic": "Derechos e Igualdad",
+                "ini_twitter": "@Wikimujeres_ES",
+                "ini_web": "http://wikimujeres.wiki/",
+                "lat": 40.4105204,
+                "literal": null,
+                "lon": -3.69358539999996,
+                "state": null,
+                "created_at": null,
+                "updated_at": null,
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.683,
+                    40.416
+                ]
+            },
+            "properties": {
+                "cartodb_id": 1354,
+                "city": "Managua",
+                "distrito": null,
+                "ini_addres": "carretera panamericana, entrada principal Barrio Hugo Chávez ",
+                "ini_agent": "Iniciativa Ciudadana",
+                "ini_descri": "Colectivo de Teatro, Narración Oral escénica",
+                "ini_facebook": "https://www.facebook.com/experimental.marana",
+                "ini_id": null,
+                "ini_mail": "experimentalmarana@gmail.com",
+                "ini_name": "Experimental Maraña ",
+                "ini_space": "Trabajo Colaborativo",
+                "ini_topic": "Arte Urbano",
+                "ini_twitter": "",
+                "ini_web": "",
+                "lat": 40.416,
+                "literal": null,
+                "lon": -3.68299999999999,
+                "state": null,
+                "created_at": null,
+                "updated_at": null,
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.683,
+                    40.416
+                ]
+            },
+            "properties": {
+                "cartodb_id": 1460,
+                "city": "Madrid",
+                "distrito": null,
+                "ini_addres": "paseo de la chopera 14, madrid",
+                "ini_agent": "Administración Pública",
+                "ini_descri": "EVA (Espacio Vecinal Arganzuela)\r\n",
+                "ini_facebook": "",
+                "ini_id": null,
+                "ini_mail": "evarganzuela@gmail.com",
+                "ini_name": "EVA",
+                "ini_space": "Centro Social",
+                "ini_topic": "Apoyo Mutuo y Cuidados",
+                "ini_twitter": "",
+                "ini_web": "http://evarganzuela.org/eva/",
+                "lat": 40.416,
+                "literal": null,
+                "lon": -3.683,
+                "state": null,
+                "created_at": null,
+                "updated_at": null,
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.692814,
+                    40.41954
+                ]
+            },
+            "properties": {
+                "cartodb_id": 388,
+                "city": "Madrid",
+                "distrito": "Salamanca",
+                "ini_addres": "Plaza de Cibeles",
+                "ini_agent": "Iniciativa Ciudadana",
+                "ini_descri": "Masa crítica de ciclistas que toma cuerpo los últimos jueves de mes a una hora y en un punto: a las 20h en la plaza de Cibeles. Los recorridos, de unos 10-15 kilómetros, son asequibles para todo tipo de ciclistas. El colectivo reivindica espacios y normas de circulación que permitan convertir la bicicleta en un medio de transporte seguro en la gran ciudad.   ",
+                "ini_facebook": "https://es-es.facebook.com/BicicriticaMadrid",
+                "ini_id": "",
+                "ini_mail": "http://madrid.bicicritica.com/contact (rellenar el formulario y llega a todos los miembros de la lista)",
+                "ini_name": "Bicicrítica",
+                "ini_space": "Derivas y Rutas Urbanas",
+                "ini_topic": "Movilidad Sostenible",
+                "ini_twitter": "@labicicritica",
+                "ini_web": "http://madrid.bicicritica.com/",
+                "lat": 40.41954,
+                "literal": "Plaza Cibeles, Madrid, Madrid, España",
+                "lon": -3.692814,
+                "state": "España",
+                "created_at": "2015-06-16T20:05:45Z",
+                "updated_at": "2016-01-25T17:50:21Z",
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.693764,
+                    40.410831
+                ]
+            },
+            "properties": {
+                "cartodb_id": 391,
+                "city": "Madrid",
+                "distrito": "Centro",
+                "ini_addres": "C/ Alameda, 15",
+                "ini_agent": "Asambleas Populares, Mareas, Plataformas y Grupos de Trabajo",
+                "ini_descri": "Bookcamping es una biblioteca digital colaborativa que reseña y enlaza recursos licenciados en su mayoría con licencias abiertas. También es una herramienta, un lugar, una comunidad, un dispositivo inacabado donde puedes entrar a bajar, subir, agrupar y etiquetar documentos que contribuyan a crear un fondo común abierto que nos ayude a repensar el mundo.",
+                "ini_facebook": "https://www.facebook.com/pages/Bookcamping/149289605161139?fref=nf",
+                "ini_id": "",
+                "ini_mail": "hola@bookcamping.cc",
+                "ini_name": "Bookcamping",
+                "ini_space": "Digital",
+                "ini_topic": "Cultura Libre",
+                "ini_twitter": "@bookcamping",
+                "ini_web": "http://bookcamping.cc/",
+                "lat": 40.410831,
+                "literal": "Calle Alameda, 15, 28014 Madrid, Madrid, España",
+                "lon": -3.693764,
+                "state": "España",
+                "created_at": "2015-06-16T20:05:45Z",
+                "updated_at": "2016-01-25T17:50:21Z",
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.698786,
+                    40.408841
+                ]
+            },
+            "properties": {
+                "cartodb_id": 384,
+                "city": "Madrid",
+                "distrito": "Centro",
+                "ini_addres": "C/ San Cosme y San Damián, 24",
+                "ini_agent": "Organizaciones y Asociaciones de Vecinos",
+                "ini_descri": "Espacio gestionado por la FRAVM en el barrio de Lavapiés que sirve de punto de encuentro a numerosos colectivos y organizaciones sociales: Marea Blanca, PAH Madrid, Asociación de Afectados por la Venta de Viviendas del IVIMA, Plataforma contra la Privatización del Canal de Isabel II, Psicólogos sin Fronteras, Plataforma por la Auditoría Ciudadana de la Deuda...",
+                "ini_facebook": "https://www.facebook.com/pages/FRAVM-Federaci%C3%B3n-Regional-de-Asociaciones-Vecinales-de-Madrid/308382639145",
+                "ini_id": "",
+                "ini_mail": "fravm@aavvmadrid.org",
+                "ini_name": "San Cosme y San Damián",
+                "ini_space": "Encuentro Diálogo y Corresponsabilidad",
+                "ini_topic": "Política y Gobernanza",
+                "ini_twitter": "@FRAVM",
+                "ini_web": "http://www.aavvmadrid.org/",
+                "lat": 40.408841,
+                "literal": "Calle San Cosme y San Damián, 24, 28012 Madrid, Madrid, España",
+                "lon": -3.698786,
+                "state": "España",
+                "created_at": "2015-06-16T20:05:45Z",
+                "updated_at": "2016-01-25T17:50:21Z",
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.68879,
+                    40.413177
+                ]
+            },
+            "properties": {
+                "cartodb_id": 397,
+                "city": "Madrid",
+                "distrito": "Retiro",
+                "ini_addres": "Avenida de Alfonso XII s/n ",
+                "ini_agent": "Administración Pública",
+                "ini_descri": "El Centro de Información y Educación Ambiental El Huerto del Retiro desarrolla un programa de educación ambiental centrado en temas de agricultura y jardinería ecológica, en el conocimiento de los valores naturales, sociales y culturales de los Jardines del Buen Retiro y en promover entre la población conductas más responsables con el medio ambiente.",
+                "ini_facebook": "",
+                "ini_id": "",
+                "ini_mail": "inforetiro@madrid.es",
+                "ini_name": "Huerto del Retiro",
+                "ini_space": "Huerto",
+                "ini_topic": "Ecología Urbana y Consumo",
+                "ini_twitter": "@REHD_Mad",
+                "ini_web": "http://actividadesambientalesretiro.com",
+                "lat": 40.4131767,
+                "literal": "Madrid, Madrid, España",
+                "lon": -3.6887904,
+                "state": "España",
+                "created_at": "2015-06-16T20:05:45Z",
+                "updated_at": "2016-01-25T17:50:21Z",
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.698687,
+                    40.407246
+                ]
+            },
+            "properties": {
+                "cartodb_id": 383,
+                "city": "Madrid",
+                "distrito": "Centro",
+                "ini_addres": "C/ Dr. Fourquet 24",
+                "ini_agent": "Iniciativa Ciudadana",
+                "ini_descri": "Un grupo de vecinas y vecinos recuperó esta parcela pública abandonada y la convirtió en un jardín comunitario, en un espacio de encuentro y convivencia abierto al desarrollo de actividades que fomentan la ecología, la reutilización y el decrecimiento.\n",
+                "ini_facebook": "https://www.facebook.com/estaesunaplaza",
+                "ini_id": "",
+                "ini_mail": "estaesunaplaza@gmail.com",
+                "ini_name": "Esta es Una Plaza",
+                "ini_space": "Solares y Espacios Recuperados",
+                "ini_topic": "Ecología Urbana y Consumo",
+                "ini_twitter": "@estaesunaplaza",
+                "ini_web": "http://estaesunaplaza.blogspot.com.es/",
+                "lat": 40.407246,
+                "literal": "Calle del Doctor Fourquet, 24, 28012 Madrid, Madrid, España",
+                "lon": -3.698687,
+                "state": "España",
+                "created_at": "2015-06-16T20:05:45Z",
+                "updated_at": "2016-01-25T17:50:21Z",
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.683,
+                    40.416
+                ]
+            },
+            "properties": {
+                "cartodb_id": 1444,
+                "city": "Madrid",
+                "distrito": null,
+                "ini_addres": "Calle Villamanil 39, posterior (AAVV Casa Campo-Batán)",
+                "ini_agent": "Asambleas Populares, Mareas, Plataformas y Grupos de Trabajo",
+                "ini_descri": "Plataforma ciudadana creada en 1989 para preservar el Parque de la Casa de Campo, dando a conocer sus valores histórico-artísticos, paisajísticos y ambientales y participando en la recuperación y difusión de su historia y en la defensa de la integridad territorial y medioambiental de la Casa de Campo, declarada Bien de Interés Cultural en la categoría de Sitio Histórico.",
+                "ini_facebook": "",
+                "ini_id": null,
+                "ini_mail": "salvemos.casadecampo@gmail.com",
+                "ini_name": "PLATAFORMA SALVEMOS LA CASA DE CAMPO",
+                "ini_space": "Medios de Comunicación Vecinales",
+                "ini_topic": "Ecología Urbana y Consumo",
+                "ini_twitter": "",
+                "ini_web": "",
+                "lat": 40.416,
+                "literal": null,
+                "lon": -3.683,
+                "state": null,
+                "created_at": null,
+                "updated_at": null,
+                "column_1474891333639": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.698355,
+                    40.411743
+                ]
+            },
+            "properties": {
+                "cartodb_id": 787,
+                "city": "Madrid",
+                "distrito": "",
+                "ini_addres": "calle duque de fernan nuñez, 2 madrid",
+                "ini_agent": "Empresa Social",
+                "ini_descri": "Cooperativa de iniciativa social. Impulsamos el emprendimiento social y el emprendimiento inclusivo tanto en nuestro país como en el \\\"Sur\\\". También prestamos servicios de consultoría social. ",
+                "ini_facebook": "",
+                "ini_id": "",
+                "ini_mail": "administracion@transformando.org",
+                "ini_name": "TRANSFORMANDO",
+                "ini_space": "Centro Social",
+                "ini_topic": "Economía Colaborativa",
+                "ini_twitter": "",
+                "ini_web": "www.transformando.org",
+                "lat": 40.4117425,
+                "literal": "",
+                "lon": -3.69835450000005,
+                "state": "",
+                "created_at": "2015-12-03T19:13:03Z",
+                "updated_at": "2016-01-25T17:50:21Z",
+                "column_1474891333639": null
+            }
+        }
+    ]
+}
