@@ -1,13 +1,19 @@
+import config from "./config.json";
+const { accessToken, style } = config;
 import React, { Component } from 'react';
 import './App.css';
 import 'bulma/css/bulma.css'
 import 'font-awesome/css/font-awesome.min.css'
 import ReactMapboxGl, { ZoomControl, Layer, Popup, Feature } from "react-mapbox-gl";
-import config from "./config.json";
+import {GeolocateControl} from 'mapbox-gl/dist/mapbox-gl.js'
+import {observable, toJS} from 'mobx';
+import {observer} from 'mobx-react';
 
-const { accessToken, style } = config;
+var appState = observable({
+    station: null,
+    popupShowLabel: true
+});
 
-const geojsonURL = "https://s3.amazonaws.com/audiomap/iniciativas.geojson"
 const containerStyle = {
   height: "50vh",
   width: "100vw"
@@ -36,27 +42,6 @@ const styles = {
 }
 
 let geojson = require('../iniciativas.json')
-console.log("Geojson", geojson)
-
-function getPlaces() {
-  return geojson
-  // return fetch(geojsonURL)
-  //   .then(res => res.json())
-  //   .then(data => {
-  //     return new Promise((resolve, reject) => {
-  //       // let geojson = JSON.stringify(data)
-  //       console.log(data);
-  //       resolve(data);
-  //       // parseString(data, (err, res) => {
-  //       //   if(!err) {
-  //       //     resolve(res.stations.station);
-  //       //   } else {
-  //       //     reject(err);
-  //       //   }
-  //       // });
-  //     });
-  //   })
-}
 
 
 class LayerWithFeatures extends Component {
@@ -64,24 +49,21 @@ class LayerWithFeatures extends Component {
     map.getCanvas().style.cursor = cursor;
   }
   _markerClick = (station, { feature }) => {
-    console.log("in _markerClick", station, feature)
-    this.setState({
-      center: feature.geometry.coordinates,
-      zoom: [14],
-      station
-    });
+    // console.log("in _markerClick", station, feature)
+    appState.station = station
+    appState.center = feature.geometry.coordinates
+    appState.zoom = [14]
   };
 
 
   render() {
     let {features} = this.props
-    console.log("FEATURES", features)
     let comp = this
     if (features) {
       return (<Layer
         type="symbol"
-        id="marker"
-        layout={{ "icon-image": "marker-15" }}>
+        layout={{ "icon-image": "{icon}-15" }}
+        >
         {
           features.map((station, index) => (
             <Feature
@@ -89,18 +71,41 @@ class LayerWithFeatures extends Component {
                 onHover={comp._onToggleHover.bind(comp, "pointer")}
                 onEndHover={comp._onToggleHover.bind(comp, "")}
                 onClick={comp._markerClick.bind(comp, station)}
-                coordinates={station.geometry.coordinates}/>
+                coordinates={station.geometry.coordinates.slice()}/>
           ))
         }
       </Layer>)
     } else {
       return (<div/>)
     }
-    
   }
 }
 
+const Bottom = () => {
+  if (appState.station) {
+    let station = appState.station.properties
+    return (
+      <div className="tile is-parent is-vertical">
+        <article className="tile is-child notification is-primary">
+          <p>
+            <span className="icon">
+              <i className="fa fa-play"></i>
+            </span>&nbsp;
+            <span className="title">Play story audio</span>
+          </p>
+        </article>
+        <article className="tile is-child notification is-warning">
+          <p className="title">{station.ini_topic}</p>
+          <p className="subtitle">{station.ini_space}</p>
+        </article>
+      </div>
+    )
+  } else {
+    return (<div></div>)
+  }
+}
 
+@observer
 class App extends Component {
 
   state = {
@@ -133,13 +138,11 @@ class App extends Component {
     //     enableHighAccuracy: true
     //   }
     // );
-
-    // getPlaces().then(res => {
-    //   this.setState({features: res.features})
-    // });
     this.setState({features: geojson.features})
   };
 
+  componentDidMount() {
+  }
 
   _onDrag = () => {
     if (this.state.station) {
@@ -155,6 +158,7 @@ class App extends Component {
   };
 
   _onControlClick = (map, zoomDiff) => {
+    console.log('in _onControlClick', zoomDiff)
     const zoom = map.getZoom() + zoomDiff;
     this.setState({ zoom: [zoom] });
   };
@@ -163,28 +167,27 @@ class App extends Component {
     this.setState({ popupShowLabel });
   }
 
+  _handleStyleLoad(map, arg) {
+    console.log(arg, map)
+    var nav = new GeolocateControl();
+    map.addControl(nav, 'top-left');
+  }
 
   render() {
-    const { features, station, end, popupShowLabel } = this.state;
-    if (station) {
-      console.log(<Popup key={station.properties['cartodb_id']} coordinates={station.geometry.coordinates} closeButton={true}>
-        <div>
-          <span style={{
-            ...styles.popup,
-            display: popupShowLabel ? "block" : "none"
-          }}>
-            {station.properties['ini_topic']}
-          </span>
-          <div onClick={this._popupChange.bind(this, !popupShowLabel)}>
-            {
-              popupShowLabel ? "Hide" : "Show"
-            }
-          </div>
-        </div>
-      </Popup>)
-    }
+    let { features } = this.state;
+    const { station, popupShowLabel } = appState;
 
-
+    features = features.map(function (feature, index) {
+      // console.log(feature)
+      if (index % 2 === 0) {
+        feature.properties['marker-color'] = '#3ca0d3'
+        feature.properties['marker-size'] = 'large'
+        feature.properties['icon'] = 'marker'
+      }
+      return feature
+    })
+    console.log('FEATURES', features)
+    // console.log('NEWFEATURES', newfeatures)
 
     return (
       <div className="app">
@@ -196,52 +199,19 @@ class App extends Component {
           minZoom={8}
           maxZoom={25}
           accessToken={accessToken}
+          onStyleLoad={this._handleStyleLoad.bind(this)}
           onDrag={this._onDrag}
           onMoveEnd={this._setMove.bind(this, true)}
           onMove={this._setMove.bind(this, false)}
           containerStyle={containerStyle}>
 
           <ZoomControl
-            zoomDiff={1}
+            zoomDiff={2}
             onControlClick={this._onControlClick}/>
-
-
           <LayerWithFeatures features={features} />
-          {
-            station && (
-              <Popup key={station.properties['cartodb_id']} coordinates={station.geometry.coordinates} closeButton={true}>
-                <div>
-                  <span style={{
-                    ...styles.popup,
-                    display: popupShowLabel ? "block" : "none"
-                  }}>
-                    {station.properties['ini_topic']}
-                  </span>
-                  <div onClick={this._popupChange.bind(this, !popupShowLabel)}>
-                    {
-                      popupShowLabel ? "Hide" : "Show"
-                    }
-                  </div>
-                </div>
-              </Popup>
-            )
-          }
 
         </ReactMapboxGl>
-        <div className="tile is-parent is-vertical">
-          <article className="tile is-child notification is-primary">
-            <p>
-              <span className="icon">
-                <i className="fa fa-play"></i>
-              </span>&nbsp;
-              <span className="title">Play story audio</span>
-            </p>
-          </article>
-          <article className="tile is-child notification is-warning">
-            <p className="title">La Tabacalera</p>
-            <p className="subtitle">Centro Social autogestionado en la antigua fabrica de tabacos de Lavapies</p>
-          </article>
-        </div>
+        <Bottom />
       </div>
     );
   }
@@ -259,3 +229,23 @@ export default App;
           //     "text-anchor": "top"
           //   }}/>
 
+          // <LayerWithFeatures features={features} />
+          // {
+          //   station && (
+          //     <Popup key={station.properties['cartodb_id']} coordinates={station.geometry.coordinates.slice()} closeButton={true}>
+          //       <div>
+          //         <span style={{
+          //           ...styles.popup,
+          //           display: popupShowLabel ? "block" : "none"
+          //         }}>
+          //           {station.properties['ini_topic']}
+          //         </span>
+          //         <div onClick={this._popupChange.bind(this, !popupShowLabel)}>
+          //           {
+          //             popupShowLabel ? "Hide" : "Show"
+          //           }
+          //         </div>
+          //       </div>
+          //     </Popup>
+          //   )
+          // }
