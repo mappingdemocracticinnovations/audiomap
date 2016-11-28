@@ -58,8 +58,10 @@
     "mobx": "^2.6.3",
     "mobx-react": "^4.0.3",
     "react": "^15.4.1",
+    "react-audio-player": "^0.3.0",
     "react-dom": "^15.4.1",
-    "react-mapbox-gl": "^0.18.0"
+    "react-mapbox-gl": "^0.18.0",
+    "react-responsive-audio-player": "^1.1.1"
   },
   "scripts": {
     "start": "node scripts/start.js",

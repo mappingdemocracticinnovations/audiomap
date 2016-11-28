@@ -5,5 +5,12 @@
 
 .map {
   width: 100%;
+}
+
+.map.full {
+  height: 100%;
+}
+
+.map.half > canvas.mapboxgl-canvas {
   height: 50%;
 }

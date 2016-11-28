@@ -5,19 +5,19 @@ import './App.css';
 import 'bulma/css/bulma.css'
 import 'font-awesome/css/font-awesome.min.css'
 import ReactMapboxGl, { ZoomControl, Layer, Popup, Feature } from "react-mapbox-gl";
-import {GeolocateControl} from 'mapbox-gl/dist/mapbox-gl.js'
+import {GeolocateControl, DoubleClickZoomHandler} from 'mapbox-gl/dist/mapbox-gl.js'
 import {observable, toJS} from 'mobx';
 import {observer} from 'mobx-react';
+import AudioPlayer from 'react-responsive-audio-player'
+import './audioplayer.css'
 
 var appState = observable({
     station: null,
-    popupShowLabel: true
+    popupShowLabel: true,
+    center: [-3.69366,40.41075],
+    zoom: [10],
+    features: []
 });
-
-const containerStyle = {
-  height: "50vh",
-  width: "100vw"
-};
 
 const styles = {
   button: {
@@ -43,16 +43,20 @@ const styles = {
 
 let geojson = require('../iniciativas.json')
 
-
+@observer
 class LayerWithFeatures extends Component {
   _onToggleHover(cursor, { map }) {
     map.getCanvas().style.cursor = cursor;
   }
   _markerClick = (station, { feature }) => {
-    // console.log("in _markerClick", station, feature)
+    console.log("in _markerClick", station, feature)
+    this.props.map.flyTo({
+      center: station.geometry.coordinates.slice(),
+      zoom: [14]
+    })
     appState.station = station
-    appState.center = feature.geometry.coordinates
-    appState.zoom = [14]
+    // TODO: should resize only on have/have not station
+    this.props.map.resize();
   };
 
 
@@ -61,9 +65,8 @@ class LayerWithFeatures extends Component {
     let comp = this
     if (features) {
       return (<Layer
-        type="symbol"
-        layout={{ "icon-image": "{icon}-15" }}
-        >
+          type="symbol"
+          layout={{ "icon-image": "marker-15" }}>
         {
           features.map((station, index) => (
             <Feature
@@ -81,23 +84,33 @@ class LayerWithFeatures extends Component {
   }
 }
 
+const SoundPlayer = (props) => {
+  let playlist = [
+    { url: 'https://s3.amazonaws.com/audiomap/music/Audiobinger_-_Shot_Me_Down.mp3',
+      displayText: 'Interview with Consuelo de Prado' }]
+  if (props.station.audio_url) {
+    return (
+      <article className="tile is-child notification is-primary">
+        <p className="title">Audio Recording</p>
+        <AudioPlayer playlist={playlist}/>
+      </article>
+    )
+  } else {
+    return (<div/>)
+  }
+}
+
 const Bottom = () => {
   if (appState.station) {
-    let station = appState.station.properties
+    let station = toJS(appState.station).properties
+    station.audio_url = 'https://s3.amazonaws.com/audiomap/music/Audiobinger_-_Shot_Me_Down.mp3'
     return (
       <div className="tile is-parent is-vertical">
-        <article className="tile is-child notification is-primary">
-          <p>
-            <span className="icon">
-              <i className="fa fa-play"></i>
-            </span>&nbsp;
-            <span className="title">Play story audio</span>
-          </p>
-        </article>
         <article className="tile is-child notification is-warning">
-          <p className="title">{station.ini_topic}</p>
-          <p className="subtitle">{station.ini_space}</p>
+          <p className="title">{station.topic}</p>
+          <p className="subtitle">{station.space}</p>
         </article>
+        <SoundPlayer station={station}/>
       </div>
     )
   } else {
@@ -116,33 +129,8 @@ class App extends Component {
   };
 
   componentWillMount() {
-    // defer till people click on geolocation button
-    // let comp = this
-    // navigator.geolocation.getCurrentPosition(
-    //   function(position) {
-    //     var locationMarker = null;
-    //     if (locationMarker){
-    //       // return if there is a locationMarker bug
-    //       return;
-    //     }
-
-    //     // sets default position to your position
-    //     let selfLat = position.coords["latitude"];
-    //     let selfLng = position.coords["longitude"];
-    //     comp.setState({center: [selfLng, selfLat], zoom: [10]})
-    //   },
-    //   function(error) {
-    //     console.log("Error: ", error);
-    //   },
-    //   {
-    //     enableHighAccuracy: true
-    //   }
-    // );
     this.setState({features: geojson.features})
   };
-
-  componentDidMount() {
-  }
 
   _onDrag = () => {
     if (this.state.station) {
@@ -158,7 +146,6 @@ class App extends Component {
   };
 
   _onControlClick = (map, zoomDiff) => {
-    console.log('in _onControlClick', zoomDiff)
     const zoom = map.getZoom() + zoomDiff;
     this.setState({ zoom: [zoom] });
   };
@@ -168,34 +155,37 @@ class App extends Component {
   }
 
   _handleStyleLoad(map, arg) {
-    console.log(arg, map)
     var nav = new GeolocateControl();
+    this.map = map
     map.addControl(nav, 'top-left');
+    // this.doubleClickZoomHandler = new DoubleClickZoomHandler(map)
+    map.flyTo({
+      center: appState.center.slice(),
+      zoom: appState.zoom.slice()
+    })
   }
 
   render() {
     let { features } = this.state;
     const { station, popupShowLabel } = appState;
-
-    features = features.map(function (feature, index) {
-      // console.log(feature)
-      if (index % 2 === 0) {
-        feature.properties['marker-color'] = '#3ca0d3'
-        feature.properties['marker-size'] = 'large'
-        feature.properties['icon'] = 'marker'
+    let classnames = "map" + (station === null ? " full" : " half");
+    let containerStyle;
+    if (station) {
+      containerStyle = {
+          height: "50vh",
+          width: "100vw"
       }
-      return feature
-    })
-    console.log('FEATURES', features)
-    // console.log('NEWFEATURES', newfeatures)
-
+    } else {
+      containerStyle = {
+          height: "100vh",
+          width: "100vw"
+      }
+    } 
     return (
       <div className="app">
         <ReactMapboxGl
-          className="map"
+          className={classnames}
           style={style}
-          center={this.state.center}
-          zoom={this.state.zoom}
           minZoom={8}
           maxZoom={25}
           accessToken={accessToken}
@@ -205,13 +195,12 @@ class App extends Component {
           onMove={this._setMove.bind(this, false)}
           containerStyle={containerStyle}>
 
-          <ZoomControl
-            zoomDiff={2}
-            onControlClick={this._onControlClick}/>
-          <LayerWithFeatures features={features} />
-
+          <ZoomControl zoomDiff={2} />
+          <LayerWithFeatures 
+            map={this.map}
+            features={features} />
         </ReactMapboxGl>
-        <Bottom />
+        { station ? <Bottom/> : <div />}
       </div>
     );
   }
@@ -219,33 +208,3 @@ class App extends Component {
 
 export default App;
 
-
-          // <GeoJSONLayer
-          //   data={geojson}
-          //   symbolLayout={{
-          //     "text-field": "{ini_topic}",
-          //     "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-          //     "text-offset": [0, 0.6],
-          //     "text-anchor": "top"
-          //   }}/>
-
-          // <LayerWithFeatures features={features} />
-          // {
-          //   station && (
-          //     <Popup key={station.properties['cartodb_id']} coordinates={station.geometry.coordinates.slice()} closeButton={true}>
-          //       <div>
-          //         <span style={{
-          //           ...styles.popup,
-          //           display: popupShowLabel ? "block" : "none"
-          //         }}>
-          //           {station.properties['ini_topic']}
-          //         </span>
-          //         <div onClick={this._popupChange.bind(this, !popupShowLabel)}>
-          //           {
-          //             popupShowLabel ? "Hide" : "Show"
-          //           }
-          //         </div>
-          //       </div>
-          //     </Popup>
-          //   )
-          // }
